@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+:root{
+    --font-Monserrat: 'Montserrat', sans-serif;
+    --font-Fraunces:'Fraunces', serif;
+    --color_texto:hsl(228, 12%, 48%);
+}
+*{
+    padding: 0;
+    margin:0;
+    
+}
+main{
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+.contenedor{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 450px;
+    width: 300px;
+
+
+}
+.informacion_producto{
+    border-end-end-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+    height: 450px;
+    background: hsl(0, 0%, 100%);
+    padding: 32px;
+    box-sizing: border-box;
+
+
+}
+.articulo{
+    text-transform: uppercase;
+    font-family: var(--font-Fraunces);
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+.articulo, .descripcion_producto, .rebaja{
+    color:hsl(228, 12%, 48%);
+    padding: 12px 0px;
+}
+.precios{
+    display: inline-flex;
+}
+.precio_real{
+    color: hsl(158, 36%, 37%);
+    font-family: var(--font-Fraunces);
+    font-weight: 700;
+    font-size: 30px;
+    padding-right: 20px;
+}
+.rebaja{
+    text-decoration: line-through;
+    vertical-align:text-top;
+}
+.articulo, .descripcion_producto{
+    font-family: var(--font-Monserrat);
+}
+.nombre_producto{
+font-family: var(--font-Fraunces);
+font-weight: 700;
+}
+.descripcion_producto{
+    font-size: 14px;
+    font-weight: 500;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 250px; 
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 24%);
+}
+.carrito_compras{
+    height: 20px;
+    width: 20px;
+    vertical-align:middle;
+    padding-right: 5px;
+}
