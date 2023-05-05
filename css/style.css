@@ -104,7 +104,7 @@ button:hover{
     padding-right: 5px;
 }
 
-@media (max-width: 375px){
+@media (min-width: 375px) and (max-width: 479px){
     .contenedor{
         display: flex;
         flex-direction: column;
