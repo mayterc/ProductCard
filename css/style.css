@@ -9,13 +9,11 @@
 *{
     padding: 0;
     margin:0;
-    
 }
-main{
-
+body{
     background-color: hsl(30, 38%, 92%);
-}
 
+}
 .contenedor{
     min-height: 100vh;
     display: flex;
@@ -25,7 +23,9 @@ main{
     border-radius: 100px;
 }
 
-img{
+.imagen{
+    background-image: url("/images/image-product-desktop.jpg");
+    background-size: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     height: 450px;
@@ -38,7 +38,7 @@ img{
     border-top-right-radius: 15px;
     width: 300px;
     height: 450px;
-    background: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
     padding: 32px;
     box-sizing: border-box;
 
@@ -65,10 +65,14 @@ img{
     font-weight: 700;
     font-size: 30px;
     padding-right: 20px;
+    
+
 }
 .rebaja{
     text-decoration: line-through;
-    vertical-align:text-top;
+    margin-top: -5px;
+    font-size: 12px;
+    vertical-align: top;
 }
 .articulo, .descripcion_producto{
     font-family: var(--font-Monserrat);
@@ -98,4 +102,36 @@ button:hover{
     width: 20px;
     vertical-align:middle;
     padding-right: 5px;
+}
+
+@media (max-width: 375px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: px; */
+    }
+    .imagen{
+        background-image: url("/images/image-product-mobile.jpg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        height: 200px;
+        width: 300px;
+    }
+    .articulo{
+        margin-top: -30px;
+    }
+    .informacion_producto{
+        height: 380px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
+
+
+    }
+    button{
+        margin-top: 10px;
+    }
+
+
 }
